@@ -9,11 +9,10 @@
       <hudson.plugins.git.UserRemoteConfig>
         <url>https://github.com/projob4all/jenkins-devops.git</url>
       </hudson.plugins.git.UserRemoteConfig>
-    </userRemoteConfigs>
+    </userRemoteConfigs>ß
     <branches>
       <hudson.plugins.git.BranchSpec>
         <name>*/master</name>
-        <name>*/userprofile-svc</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>

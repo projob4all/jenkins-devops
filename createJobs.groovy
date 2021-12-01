@@ -13,9 +13,25 @@ pipelineJob('userprofile-svc') {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/projob4all/profile-svc/tree/master/userprofile-svc'
+                        url 'https://github.com/projob4all/userprofile-svc.git'
                     }
                     branch 'master'
+                }
+            }
+        }
+    }
+}
+
+pipelineJob('userprofile-svc-job-docker') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/projob4all/userprofile-svc.git'
+                    }
+                    branch 'master'
+                    scriptPath('Jenkinsfile-docker')
                 }
             }
         }
